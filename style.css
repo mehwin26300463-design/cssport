@@ -1,0 +1,152 @@
+:root {
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --primary: #1d3557;
+  --accent: #457b9d;
+  --text: #1f2933;
+  --muted: #52606d;
+  --border: #dbe2ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+header,
+section,
+footer {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #ffffff;
+  padding: 1.25rem 0 2.5rem;
+}
+
+nav {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.tagline {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  opacity: 0.95;
+}
+
+main {
+  padding: 2rem 0 3rem;
+}
+
+section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 8px 24px rgba(29, 53, 87, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+p {
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+.skills-list {
+  margin: 1rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.skills-list li + li {
+  margin-top: 0.5rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f8fafc;
+  padding: 1.25rem;
+}
+
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.project p {
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  padding: 1.5rem 0 2.5rem;
+  text-align: center;
+  color: var(--muted);
+}
